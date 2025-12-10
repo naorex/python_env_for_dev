@@ -27,5 +27,9 @@ docker pull naorex/uv-python-dev:latest
 ```
 
 ```shell
-docker run -it --rm -v $(pwd):/workspace naorex/uv-python-dev:latest
+docker container run -itd --name your-container-name naorex/uv-python-dev:latest
+```
+
+```shell
+docker exec -it your-container-name bash
 ```
